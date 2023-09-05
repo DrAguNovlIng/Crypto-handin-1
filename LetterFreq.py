@@ -40,11 +40,13 @@ ciphertext3 = "BNVSNSIHQCEELSSKKYERIFJKXUMBGYKAMQLJTYAVFBKVTDVBPVVRJYYLAOKYMPQSC
 frequencies1 = countFrequencies(cipher=ciphertext1)
 frequencies2 = countFrequencies(cipher=ciphertext2)
 frequencies3 = countFrequencies(cipher=ciphertext3)
+frequencies4 = blockCount(cipher=ciphertext3, t=2)
 
 plain = tryDecryptAffine(chiper=ciphertext1, key={"a": 19, "b": 4})
 
 print(plain)
 
-#plotFrequencies(frequencies1)
-#plotFrequencies(frequencies2)
-#plotFrequencies(frequencies3)
+plotFrequencies(frequencies1)
+plotFrequencies(frequencies2)
+plotFrequencies(frequencies3)
+plotFrequencies(frequencies4)
